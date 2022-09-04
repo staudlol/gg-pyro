@@ -38,8 +38,6 @@ public class GGPyro {
                             new Style()
                                     .setColor(TextFormatting.RED)
                                     .setBold(true)));
-
-            event.setCanceled(true);
         }
     }
 }
