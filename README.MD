@@ -2,9 +2,9 @@
 
 - GGpyro is a free and open-source mod for Minecraft 1.12.2.
 
-# Inpsiration
+# Inspiration
 
-- The mod is inspiried from by frustration of seeing many players repeating the same phrase for hours on end whilst playing.
+- The mod is inspired from by frustration of seeing many players repeating the same phrase for hours on end whilst playing.
 
 # Installation
 1. Install Forge for Minecraft 1.12.2
