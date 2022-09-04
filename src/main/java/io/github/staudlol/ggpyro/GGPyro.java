@@ -25,19 +25,29 @@ public class GGPyro {
         MinecraftForge.EVENT_BUS.register(this);
     }
 
+    private final String[] blockedWords = new String[] {
+            "gg pyro",
+            "ggpyro",
+            "ggpiro",
+            "gg piewo",
+            "ggpiewo",
+            "ez" // Let's just remove this, we aren't all 9 years old.
+    };
+
     @SubscribeEvent
     public void onChat(ClientChatEvent event) {
         final EntityPlayer player = Minecraft.getMinecraft().player;
         final String message = event.getMessage();
 
-        if (message.equalsIgnoreCase("gg pyro") || message.equalsIgnoreCase("ggpyro") || message.equalsIgnoreCase("ggpiro")) {
-            event.setCanceled(true);
-
-            player.sendMessage(new TextComponentString("Stop it.. get some help.")
-                    .setStyle(
-                            new Style()
-                                    .setColor(TextFormatting.RED)
-                                    .setBold(true)));
+        for (String blockedWord : blockedWords) {
+            if (message.equalsIgnoreCase(blockedWord)) {
+                event.setCanceled(true);
+                player.sendMessage(new TextComponentString("Stop it... get some help.")
+                        .setStyle(
+                                new Style()
+                                        .setColor(TextFormatting.RED)
+                                        .setBold(true)));
+            }
         }
     }
 }

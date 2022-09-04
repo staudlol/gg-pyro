@@ -3,7 +3,7 @@
     "modid": "ggpyro",
     "name": "GGPyro",
     "description": "Just stop saying ggpyro...",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "mcversion": "${mcversion}",
     "url": "https://github.com/staudlol/gg-pyro",
     "updateUrl": "",

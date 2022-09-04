@@ -1,9 +1,0 @@
-Manifest-Version: 1.0
-Implementation-Title: gg-pyro
-Implementation-Version: 1.12.2-1.0.0
-Specification-Vendor: staud
-Specification-Title: ggpyro
-Implementation-Timestamp: 2022-09-04T01:26:18+0100
-Specification-Version: 1.0
-Implementation-Vendor: staud
-
